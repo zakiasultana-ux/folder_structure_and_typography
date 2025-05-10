@@ -1,0 +1,60 @@
+/* Fun Typography Theme */
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: #fef9e7;
+  color: #333;
+  margin: 0;
+  padding: 30px;
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Section styling */
+section {
+  max-width: 800px;
+  background-color: #fff4cc;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #e67e22;
+  text-shadow: 3px 3px 0 rgba(26, 188, 156, 0.8); 
+}
+
+p {
+  font-size: 19px;
+  color: #444;
+}
+
+/* Style the first letter of each paragraph */
+h2 + p::first-letter {
+  font-size: 48px; 
+  font-weight: bold; 
+  color: #ff6f61; 
+  float: left;
+  margin-right: 10px; 
+  line-height: 1.1;
+  padding-top: 10px;
+}
+
+/* Image styling */
+img {
+  width: 50%;
+  max-width: 400px;
+  height: auto; 
+  display: block;
+  margin: 0 auto 25px;
+  border-radius: 10px;
+  border: 4px solid #ffcd56;
+}
