@@ -1,78 +1,106 @@
-/* Fun Typography Theme */
+/* Base Styles */
 body {
-  font-family: 'Pacifico', cursive;
-  background-color: #fef9e7;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
 }
 
-/* Hidden class */
 .hidden {
   display: none;
 }
 
-/* Section styling */
-section {
-  max-width: 800px;
-  background-color: #fff4cc;
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Image styling */
-img {
-  width: 50%;
-  max-width: 400px;
-  height: auto; 
-  display: block;
-  margin: 0 auto 25px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #ff6f61;
-  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
 h2 {
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: #ff6f61;
-  text-shadow: 3px 3px 0 rgba(26, 188, 156, 0.8); 
+  font-family: 'Lobster', cursive;
+  color: #00bfff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 48px;
+  text-shadow: 2px 2px 0 rgba(14, 99, 135, 0.8);
 }
 
-p {
-  font-size: 19px;
-  color: #444;
-  margin-left: 40px;
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Style the first letter of each paragraph */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  grid-column: span 12;
+}
+
+/* Image Styling */
+section img {
+  width: 400px;
+  height: auto;
+  flex: 0 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.1);
+}
+
+section div {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+section p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #555555;
+  margin-bottom: 20px;
+}
 
 h2 + p::first-letter {
-  font-size: 48px; 
-  font-weight: bold; 
-  color: #ff6f61; 
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #00bfff;
   float: left;
-  margin-right: 10px; 
-  line-height: 1.1;
-  padding-top: 10px;
-  text-shadow: 3px 3px 0 rgba(26, 188, 156, 0.8);
+  margin-right: 8px;
+  line-height: 1;
 }
 
-/* Footer */
-
-footer {
-  background-color: rgba(26, 188, 156, 0.8);
-  color: #ff6f61;  
-  text-align: center;
-  padding-bottom: 5px;
-  font-size: 18px;
-  margin-top: 20px;
-  border-top: 4px solid #16a085;
-  font-family: 'Playfair Display', serif;  
+p span {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  color: #00bfff;
+  font-weight: bold;
   letter-spacing: 2px;
-  font-weight: 700;
-  text-decoration: underline 2px #ff6f61 double;
-  text-underline-offset: 6px;
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #00bfff;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 5px solid #ffffff;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
 }
